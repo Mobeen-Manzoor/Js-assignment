@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grade finder</title>
+</head>
+<body>
+    
+
+    <script>
+        var english = Number( prompt("Enter your English marks out of 100"));
+        while (english > 100){
+            alert("Maximum marks should be 100");
+            var english = Number( prompt("Enter your English marks out of 100"));
+        }
+        var urdu = Number( prompt("Enter your urdu marks out of 100"));
+        while (urdu > 100){
+            alert("Maximum marks should be 100");
+            urdu = Number( prompt("Enter your urdu marks out of 100"));
+        }
+        var maths = Number( prompt("Enter your math marks out of 100"));
+        while (maths > 100){
+            alert("Maximum marks should be 100");
+            maths = Number( prompt("Enter your math marks out of 100"));
+        }
+        var science = Number( prompt("Enter your science marks out of 100"));
+        while (science > 100){
+            alert("Maximum marks should be 100");
+            science = Number( prompt("Enter your science marks out of 100"));
+        }
+        var physics = Number( prompt("Enter your physics marks out of 100"));
+        while (english > 100){
+            alert("Maximum marks should be 100");
+            physics = Number( prompt("Enter your physics marks out of 100"));
+        }
+         
+        var totalMarks = Number( urdu + english + maths + science + physics);
+        var perc = totalMarks/500*100;
+
+        alert("Your English marks is : "+  english +
+        "\nYour Urdu marks is : " + urdu +
+        "\nYour Maths marks is : " + maths +
+        "\nYour Science marks is : " + science +
+        "\nYour Physics marks is : " + physics +
+        "\nYour Total marks is : " + totalMarks +
+        "\n percentage is : " + perc+"%" 
+        );
+        </script>
+</body>
+</html>
